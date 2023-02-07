@@ -7,6 +7,7 @@ const modal = document.querySelector(".modal");
 const input2 = document.querySelector(".input2");
 const form2 = document.querySelector("form2");
 const button2 = document.querySelector(".button2");
+const hidden = document.querySelector(".hidden");
 
 // linear-gradient
 const values = [
@@ -75,10 +76,11 @@ button.addEventListener("click", (e) => {
   right: 40px;`;
   li.appendChild(img2);
   img2.addEventListener("click", () => {
-    modal.classList.remove("hidden");
+    hidden.style.display = "block";
   });
   button2.addEventListener("click", (e) => {
     e.preventDefault();
+    hidden.style.display = "none";
     li.textContent = input2.value;
   });
 
