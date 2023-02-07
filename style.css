@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Cagliostro&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  font-family: "Cagliostro", sans-serif;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  background: linear-gradient(217deg, #9b5c25, #4a91c7);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  margin-top: 20px;
+  font-size: 25px;
+  border-radius: 5px;
+  padding: 5px 15px;
+  background-color: darkorchid;
+  color: #ffffff;
+  border: 0;
+  margin-bottom: 20px;
+  margin-left: 190px;
+  transition: all 0.3s;
+}
+.button:hover {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.input:hover {
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+h1 {
+  font-family: "Cagliostro", sans-serif;
+  font-size: 50px;
+}
+h1:hover {
+  color: rgb(8, 199, 199);
+}
+
+.input {
+  margin-top: 5px;
+  transition: all 0.3s;
+  font-family: "Cagliostro", sans-serif;
+  width: 300px;
+  padding: 5px 5px;
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  border-radius: 10px;
+  background-color: rgb(204, 204, 204, 0.5);
+  user-select: none;
+}
+
+.input:focus {
+  outline: 0;
+}
+
+.list {
+  position: relative;
+}
+
+/* form 2 */
+.modal {
+  display: none;
+  width: 100%;
+  max-width: 300px;
+  height: 200px;
+  background: #4a91c7;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hidden {
+  display: none;
+}
+
+.button2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
+}
+
+.input2 {
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
