@@ -3,6 +3,10 @@ const input = document.querySelector(".input");
 const button = document.querySelector(".button");
 const list = document.querySelector("ul");
 const body = document.querySelector("body");
+const modal = document.querySelector(".modal");
+const input2 = document.querySelector(".input2");
+const form2 = document.querySelector("form2");
+const button2 = document.querySelector(".button2");
 
 // linear-gradient
 const values = [
@@ -64,13 +68,19 @@ button.addEventListener("click", (e) => {
   right: 7px;`;
   li.appendChild(img);
 
-  // let text = document.createElement("img");
-  // text.setAttribute("scr", "delete.png");
-  // text.style = `width:20px; height:16px; position: absolute;
-  // right: 55px;`;
-  // li.appendChild(text);
-  // text.addEventListener("click", () => {
-  // });
+  // img 2
+  let img2 = document.createElement("img");
+  img2.setAttribute("src", "edit.svg");
+  img2.style = `width:20px; height:16px; position: absolute;
+  right: 40px;`;
+  li.appendChild(img2);
+  img2.addEventListener("click", () => {
+    modal.classList.remove("hidden");
+  });
+  button2.addEventListener("click", (e) => {
+    e.preventDefault();
+    li.textContent = input2.value;
+  });
 
   // dblclick
   let add = true;
